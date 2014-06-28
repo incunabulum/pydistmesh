@@ -32,8 +32,8 @@ exec(line, globals())
 ext_modules = [
     Extension(
         'distmesh._distance_functions',
-        sources=[os.path.join('distmesh', '_distance_functions.c')],
-        depends=[os.path.join('distmesh', 'src', 'distance_functions.c')],
+        sources=[os.path.join('distmesh', '_distance_functions.cpp')],
+        depends=[os.path.join('distmesh', 'src', 'distance_functions.cpp')],
         include_dirs=[np.get_include()],
     ),
 ]

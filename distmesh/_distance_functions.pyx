@@ -17,7 +17,7 @@
 cimport numpy as np
 np.import_array()
 
-cdef extern from "src/distance_functions.c":
+cdef extern from "src/distance_functions.cpp":
     double _dellipse "dellipse" (double x0, double y0, double a, double b)
     double _dellipsoid "dellipsoid" (double x0, double y0, double z0,
             double a, double b, double z)
